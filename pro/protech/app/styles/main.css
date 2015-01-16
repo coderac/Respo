@@ -1,0 +1,342 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/*Manually updated style by me*/
+
+/*Billing html row css*/
+
+.brow { width:100%;}
+
+@media screen and (max-width: 480px) {
+  .brow { width:100%;}
+    .bleft {width:30%;float:left;}
+    .bright{width:70%; float:right;}
+    #desright{
+        margin-top: -6em;
+        margin-right: 10px;
+    }
+    h6#contentspace{
+        word-spacing: 4px;
+    }
+
+  .jumbo_padds {
+    padding-bottom: 303px;
+
+  }
+  #qu {
+    margin-left: 13em;
+    position: initial;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+    font-weight: 500;
+
+  }
+  .client_img{
+    width:60px;
+    height:60px;
+  }
+  .linkbars{
+    text-align: left;
+    margin-left: 15%;
+    font-size: 12px;
+  }
+
+}
+@media (min-width: 767px) {
+  .brow {
+    width: 100%;
+  }
+
+  .bleft {
+    width: 30%;
+    float: left;
+  }
+
+  .bright {
+    width: 70%;
+    float: right;
+  }
+
+  #desright {
+    margin-top: -4em;
+    margin-right: 18px;
+  }
+
+  h6#contentspace {
+    word-spacing: 4px;
+  }
+
+  .jumbo_padds {
+    padding-bottom: 303px;
+
+  }
+  #qu {
+    margin-left: 46em;
+    position: initial;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+    font-weight: 600;
+
+  }
+  .client_img{
+    width:130px;
+    height:130px;
+  }
+
+  .linkbars{
+    text-align: left;
+    margin-left: 15%;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .brow { width:100%;}
+    .bleft {width:30%;float:left;}
+    .bright{width:70%; float:right;}
+    #desright{
+        margin-top: -4em;
+        margin-right: 18px;
+    }
+    h6#contentspace{
+        word-spacing: 4px;
+    }
+  .jumbo_padds{
+    padding-bottom: 23%;
+  }
+  #qu {
+    margin-left: 46em;
+    position: initial;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+    font-weight: 600;
+
+  }
+  .client_img{
+    width:130px;
+    height:130px;
+  }
+  .linkbars{
+    text-align: left;
+    margin-left: 15%;
+    font-size: 15px;
+  }
+
+
+}
+
+@media (min-width: 1200px){
+  .brow { width:100%;}
+  .bleft {width:30%;float:left;}
+  .bright{width:70%; float:right;}
+  #desright{
+    margin-top: -4em;
+    margin-right: 18px;
+  }
+  h6#contentspace{
+    word-spacing: 4px;
+  }
+  .jumbo_padds{
+    padding-bottom: 235px;
+  }
+  #qu {
+     margin-left: 46em;
+     position: initial;
+     right: 0;
+     top: 0;
+    font-size: 14px;
+    font-weight: 600;
+   }
+  .client_img{
+    width:130px;
+    height:130px;
+  }
+  .linkbars{
+    text-align: left;
+    margin-left: 15%;
+    font-size: 16px;
+  }
+  .table_on{
+    margin-top: 104px;
+  }
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+  .brow { width:100%;}
+  .bleft {width:30%;float:left;}
+  .bright{width:70%; float:right;}
+  #desright{
+    margin-top: -4em;
+    margin-right: 18px;
+  }
+  h6#contentspace{
+    word-spacing: 4px;
+  }
+  .jumbo_padds{
+    padding-bottom: 304px;
+  }
+  #qu {
+    margin-left: 46em;
+    position: initial;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+    font-weight: 600;
+
+  }
+  .client_img{
+    width:130px;
+    height:130px;
+  }
+  .linkbars{
+    text-align: left;
+    margin-left: 15%;
+    font-size: 16px;
+  }
+
+}
+/*@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  .brow { width:100%;}
+  .bleft {width:30%;float:left;}
+  .bright{width:70%; float:right;}
+  #desright{
+    margin-top: -4em;
+    margin-right: 18px;
+  }
+  h6#contentspace{
+    word-spacing: 4px;
+  }
+  .jumbo_padds{
+    padding-bottom: 304px;
+  }
+
+}*/
+
+
+.bs-example{
+/*    color: #959595;
+    content: "Example";
+    font-size: 12px;
+    font-weight: 700;
+    left: 15px;
+    letter-spacing: 1px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 15px;*/
+
+    display: inherit;
+    float: initial;
+    position: relative;
+    text-align: left;
+    margin-top: 6em;
+}
+.textboxlist {
+    background-color: #fff;
+    cursor: text;
+    font-size: 12px;
+}
+.textboxlist-bit {
+    cursor: default;
+    display: block;
+    float: left;
+    list-style-type: none;
+    margin: 0 5px 3px 0;
+    padding: 0;
+}
+.textboxlist-bit-box {
+    background: none repeat scroll 0 0 #969696;
+    border-radius: 9px;
+    cursor: default;
+    line-height: 18px;
+    padding: 2px 12px 3px;
+    position: relative;
+    white-space: nowrap;
+}
+  /*padding for jumboelement in clientview.*/
+
+#data_table_mar{
+  margin-bottom: 10px;
+  margin-top: 2px;
+}

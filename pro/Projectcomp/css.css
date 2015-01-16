@@ -1,0 +1,73 @@
+.textboxlist {
+    background-color: #fff;
+    cursor: text;
+    font-size: 12px;
+}
+.textboxlist-bits {
+    border: 1px solid #999;
+    margin: 0;
+    overflow: hidden;
+    padding: 3px 4px 0;
+}
+.textboxlist-bit {
+    cursor: default;
+    display: block;
+    float: left;
+    list-style-type: none;
+    margin: 0 5px 3px 0;
+    padding: 0;
+}
+.textboxlist-bit-editable {
+    border: 1px solid #fff;
+}
+.textboxlist-bit-editable-input {
+    border: medium none;
+    font: 11px "Lucida Grande",Verdana;
+    height: 15px;
+    padding: 2px 0;
+}
+.textboxlist-bit-editable-input:focus {
+    outline: 0 none;
+}
+.textboxlist-bit-box {
+    background: none repeat scroll 0 0 #eeeeee;
+    border-radius: 9px;
+    cursor: default;
+    line-height: 18px;
+    padding: 2px 12px 3px;
+    position: relative;
+    white-space: nowrap;
+}
+.textboxlist-bit-box-deletable {
+    padding-right: 30px;
+}
+.textboxlist-bit-box-deletebutton {
+    background: url("/media/images/4.0/delete-x-circle.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    font-size: 1px;
+    height: 16px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 16px;
+}
+.textboxlist-bit-box-deletebutton:hover {
+    border: medium none;
+    text-decoration: none;
+}
+.textboxlist-bit-box-hover {
+}
+.textboxlist-bit-box-focus {
+}
+.textboxlist-bit-box-focus .textboxlist-bit-box-deletebutton {
+    background-position: center bottom;
+}
+.textbox-list-add {
+    background: url("/media/images/4.0/buttons/plus-sign-btn.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    font-size: 1px;
+    height: 20px;
+    right: 4px;
+    top: 4px;
+    width: 20px;
+}

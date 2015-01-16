@@ -1,0 +1,123 @@
+<div class="jumbotron jumbo_padds">
+<table style="width: 100%; height: 100%;">
+
+    <div class = "brow" >
+        <div class = "bleft">
+            <div class="linkbars">
+              <h4><img src="images/che_demo.jpg" class="client_img"></h4>
+               <a ng-href="#/profile">Profile</a><br>
+               <a ng-href="#/projects">Projects</a><br>
+               <a ng-href="#/feedback">Feedback</a>
+           </div>
+        </div>
+
+    <!--Segregation of the right alignment and left alignment of pages-->
+
+
+        <div class= "bright">
+            <h4 style="text-align: left;">Employeer</h4>
+            <div style="border-top: 1px solid #318d73;">
+               <!--Custom table tool bar-->
+                <div class="bleft text-left">
+                    <h4>Project Title</h4>
+                    <h5>Project Description</h5>
+                 </div>
+            <div class="text-right bright" id="desright" >
+                <span style=" color: #999999">Project code: xx-xx-xx</span>
+                <h6 id="contentspace">Country | State | Time</h6>
+            </div>
+                <div class="bs-example">
+                    fbandfjbna; ldfkb;aditb; nalkfnb; aknd; blk, snvaknfb'na 'fbknerkmn 'LSKNVF; ALJNBAJBNl kbwsvilab kjsnd; lkanfg as;lkj a;lfdkjl ;akfjg ;lakf; ladkfnbla ;dknfb;laknb afvafnlva fdnkl;akdfvn l;adfnkalkfbn l;dbkn a'fv adfba;fl malbkad fbkla' fvla; df lbkjs ; dj baie;ovkmadb abn akdfnb'lkgb 'amdfkanbdlkbla'gbm 'a;fj rgji erkvj' sldk fv;ladfknbla; dkfnb'adfb adlfkba FNJBLABN; LAJNkban; kbjk ;ofknb ;akbn; odkjnb; a hgvojhov; akflv;nav nOVKJ ;DFKHBUVH; krniejnv; skjv nkjsVN ;sdnv; ls v NBSDJV N; FKBNA; FDBH; ADLFKNAB; LKNKF; IRNV;LKNFKL ; BJL; NDKAKNSFKLBJAN ;LVNR;UNVA;LKSNV;Lsjhn; okns; lKJN ;LNSV;LAN
+
+                </div>
+
+            <div class="text-left" style="margin-top: 10px;">
+                <a ng-href="#/skills"><u>Skills Required</u></a> <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+            </div>
+            <div class="bright" style="margin-bottom: 4em;">
+                <div class="textboxlist-bit textboxlist-bit-box">JAVA</div>
+                <div class="textboxlist-bit textboxlist-bit-box">HTML/CSS</div>
+                <div class="textboxlist-bit textboxlist-bit-box">ORACLE</div>
+                <div class="textboxlist-bit textboxlist-bit-box">PL/SQL</div>
+                <div class="textboxlist-bit textboxlist-bit-box">ANGULAR</div>
+            </div>
+             <div class="bright" style="border-bottom: 1px dashed #2b542c; margin-top: auto; width: 100%;">
+            </div>
+
+            <div class="text-left table_on">
+                  <a ng-href="#/skills"><u>Candidates matching the required Skills</u></a> <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+            </div>
+
+            <div class="table-responsive" id="data_table_mar" ng-controller="clientViewTableCtrl">
+                <table class="table table-bordered bright">
+                    <thead>
+                    <tr  style="margin-left: 2px;">
+                        <th>Name</th>
+                        <th>Skills</th>
+                        <th>Availability</th>
+                        <th>Interview Schedule</th>
+                        <th>Status</th>
+                        <th>Ratings</th>
+                        <th>Select</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="emp in clientEmployeeView">
+                        <td><a ng-href="#/emp.Name">{{emp.Name}}</a></td>
+                        <td>{{emp.Skills}}</td>
+                        <td>{{emp.Availability}}</td>
+                        <td>{{emp.Interview_Schedule}}</td>
+                        <td>{{emp.Status}}</td>
+                        <td>{{emp.Ratings}}</td>
+                        <td></td>
+                        <td class="checkbox" style="margin-left: -3em;"><input type="checkbox" style="margin: -4px -20px 0;"></td>
+                    </tr>
+                  <!--  <tr>
+                        <th scope="row">1</th>
+                        <td><a ng-href="#/cell 1">Table cell</a></td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td class="checkbox" style="margin-top: -3px;"><input type="checkbox"></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><a ng-href="#/cell 1">Table cell</a></td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td>Table cell</td>
+                        <td class="checkbox" style="margin-top: -3px;"><input type="checkbox"></td>
+                    </tr>-->
+
+                    </tbody>
+
+                </table>
+              <div class="btn-group" style="float: right; margin-left: 60em; margin-top: 2px;">
+                <button type="button" class="btn btn-info" aria-expanded="false" style="font-size: 16px; padding: 2px 24px; ">Submit
+                </button>
+              </div>
+<!--              <div>
+                <h1 class="bright">Rahul</h1>
+                <h1 class="bright">Rahul</h1>
+                <h1 class="bright">Rahul</h1>
+                <h1 class="bright">Rahul</h1>
+                <h1 class="bright">Rahul</h1>
+                <h1 class="bright">Rahul</h1>
+              </div>-->
+            </div>
+                <!--End of the bootstap script-->
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+</table>
+</div>
