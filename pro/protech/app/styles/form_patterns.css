@@ -1,0 +1,16 @@
+.regUser{
+  /*width: 390px;*/
+  width: 190px;
+  height: 230px;
+  float: left;
+  text-align: left;
+  border: hidden;
+}
+
+.stage-gap{
+  margin-top: 10px;
+}
+
+td.left_col2{
+  padding-left: 13px;
+}
