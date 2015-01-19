@@ -22,13 +22,15 @@ var ctrls = angular.module('protechApp');
     });
 
 
+
+
 /*
 var clientViewCtrl = angular.module('clientViewCtrl', []);
     clientViewCtrl.controller('clientViewTableCtrl', function($scope){
     console.log('getting request');
 */
 /*      $scope.url='../json/clientEmployeeView.json';
-      $http.get($scope.url).success(function(data){
+      $http.get($scope.url).success(function(data){}
         $scope.clientEmployeeView = data;
       });*//*
 
