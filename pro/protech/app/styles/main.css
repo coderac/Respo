@@ -76,6 +76,7 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+
 }
 
 /*Manually updated style by me*/
@@ -84,7 +85,7 @@ body {
 
 .brow { width:100%;}
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .brow { width:100%;}
     .bleft {width:30%;float:left;}
     .bright{width:70%; float:right;}
@@ -217,7 +218,7 @@ body {
     word-spacing: 4px;
   }
   .jumbo_padds{
-    padding-bottom: 235px;
+    padding-bottom: 432px;
   }
   #qu {
      margin-left: 46em;
@@ -275,6 +276,7 @@ body {
   }
 
 }
+
 /*@media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
