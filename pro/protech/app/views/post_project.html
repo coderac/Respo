@@ -1,4 +1,4 @@
-<div class="jumbotron jumbo_padds">
+<div class="jumbotron jumbo_padds2">
   <!--<div ng-app="myApp" ng-controller="myController">
     <table>
       <tr ng-repeat="item in myList">
@@ -13,55 +13,54 @@
     {{myList}}
     <input type="button" ng-click="ok()" value="save" />
   </div>-->
+<div class="eol-center">
+  <div class="head_desc">
+    <label id="head_font">Post your Project</label><br />
+    <label>Post your project details below</label>
+  </div>
 
-  <form class="regUser" name="regUser" ng-submit="createEnterDocJSON(regUserList)">
-
-
-    <div>
-      <label>First Name</label><br />
-      <input type="text" ng-model="fName"/>
-    </div>
-    <div>
-      <label>Last Name</label><br />
-      <input type="text" ng-model="fName"/>
-    </div>
-    <br />
-    <div>
-      <label>Email</label><br />
-      <input type="text" ng-model="fName"/>
-    </div>
+<div>
+  <form name="regUser" ng-submit="createEnterDocJSON(regUserList)">
 
 
-
-
-    <!--    <table class="table-responsive left_col1" >
+    <table class="table-responsive table_left" id="table_gap" >
           <tr>
-            <td>First Name</td>
-            <td class="left_col2">Last Name</td>
+            <td class="tablerow_fontgap">Project/Task Name</td>
+          </tr>
+          <tr>
+            <td class="tablerow_fontgap"><input ng-model="projectName" type="text" class="tabletext_gap"/></td>
+          </tr>
+          <tr><td class="tablerow_fontgap">Description</td></tr>
+          <tr><td style="width: 10px;"><input type="text" ng-model="email" class="tabletext_gap" id="tabletext_height"/></td></tr>
+          <tr><td class="tablerow_fontgap">Category</td></tr>
+          <tr><td class="tablerow_fontgap">
+
+            <div data-ng-app data-ng-controller="postProjectCtrl">
+              <select data-ng-model="option1" data-ng-options="option for option in options1" data-ng-change="getOptions2()">
+              </select>
+              <select data-ng-model="option2" data-ng-options="option for option in options2" data-ng-show='options2.length'>
+              </select>
+            </div>
+
+          </td></tr>
+          <tr>
+            <td class="tablerow_fontgap">Specific Skill required</td>
           </tr>
           <tr>
             <td><input ng-model="fName" type="text"/></td>
-            <td class="left_col2"><input type="text" ng-model="lName"></td>
-          </tr>
-          <tr><td>Email</td></tr>
-          <tr><td style="width: 10px;"><input type="text" ng-model="email"></td></tr>
-          <tr><td>Username</td></tr>
-          <tr><td><input type="text" ng-model="username"></td></tr>
-          <tr>
-            <td>Password</td>
-            <td class="left_col2">Retype Password</td>
-          </tr>
-          <tr>
-            <td><input ng-model="fName" type="text"/></td>
-            <td class="left_col2"><input type="text" ng-model="lName"></td>
           </tr>
 
         </table>
-    -->
+    <div class="btn-group" style="float: right; margin-right: 846px; margin-top: 21px;">
+      <button type="button" class="btn btn-info" aria-expanded="false" style="font-size: 16px; padding: 2px 24px; ">Submit
+      </button>
+    </div>
 
 
 
-
-    </table>
   </form>
+
+  </div>
+</div>
+</div>
 </div>
