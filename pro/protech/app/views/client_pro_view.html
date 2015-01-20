@@ -1,6 +1,6 @@
 <div class="jumbotron jumbo_padds">
 <table style="width: 100%; height: 100%;">
-
+<div class="eol-center-clientview">
     <div class = "brow" >
         <div class = "bleft">
             <div class="linkbars">
@@ -47,9 +47,9 @@
             <div class="text-left table_on">
                   <a ng-href="#/skills"><u>Candidates matching the required Skills</u></a> <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
             </div>
-
+            <div class="eol-center1">
             <div class="table-responsive" id="data_table_mar" ng-controller="clientViewTableCtrl">
-                <table class="table table-bordered bright">
+<!--                <table class="table table-bordered bright">
                     <thead>
                     <tr  style="margin-left: 2px;">
                         <th>Name</th>
@@ -60,7 +60,20 @@
                         <th>Ratings</th>
                         <th>Select</th>
                     </tr>
-                    </thead>
+                    </thead>-->
+              <table data-height="299" data-click-to-select="true" class="table table-bordered bright" id="tab">
+                <thead>
+                <tr>
+                  <th data-field="id" data-align="right">Name</th>
+                  <th data-field="name" data-align="center">Skills</th>
+                  <th data-field="price" data-align="">Availability</th>
+                  <th data-field="price" data-align="">Interview Schedule</th>
+                  <th data-field="price" data-align="">Status</th>
+                  <th data-field="price" data-align="">Ratings</th>
+                  <th class="bs-checkbox" style="margin-left: -3em;"><input type="checkbox"></th>
+                </tr>
+                </thead>
+
                     <tbody>
                     <tr ng-repeat="emp in clientEmployeeView">
                           <td><a ng-href="#/emp.Name">{{emp.Name}}</a></td>
@@ -69,8 +82,7 @@
                         <td>{{emp.Interview_Schedule}}</td>
                         <td>{{emp.Status}}</td>
                         <td>{{emp.Ratings}}</td>
-                        <td></td>
-                        <td class="checkbox" style="margin-left: -3em;"><input type="checkbox" style="margin: -4px -20px 0;"></td>
+                        <td class="bs-checkbox" style="margin-left: -3em;"><input type="checkbox"></td>
                     </tr>
                   <!--  <tr>
                         <th scope="row">1</th>
@@ -97,6 +109,7 @@
                     </tbody>
 
                 </table>
+            </div>
               <div class="btn-group" style="float: right; margin-left: 60em; margin-top: 2px;">
                 <button type="button" class="btn btn-info" aria-expanded="false" style="font-size: 16px; padding: 2px 24px; ">Submit
                 </button>
@@ -118,6 +131,6 @@
 
         </div>
     </div>
-
+</div>
 </table>
 </div>
