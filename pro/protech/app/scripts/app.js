@@ -33,7 +33,7 @@ angular
       })
       .when('/post_project', {
         templateUrl: '../views/post_project.html',
-        controller: 'PostProjectCtrl'
+        controller: 'postProjectCtrl'
       })
       .otherwise({
         redirectTo: '/'
