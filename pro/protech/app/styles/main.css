@@ -203,9 +203,7 @@ body {
     font-size: 15px;
   }
 
-
 }
-
 @media (min-width: 1200px){
   .brow { width:100%;}
   .bleft {width:30%;float:left;}
@@ -234,11 +232,22 @@ body {
   }
   .linkbars{
     text-align: left;
-    margin-left: 15%;
+    margin-left: 20%;
     font-size: 16px;
   }
   .table_on{
     margin-top: 104px;
+  }
+  .fixed-table-container {
+    position: relative;
+    clear: both;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    height: 299px;
+    padding-bottom: 37px;
+  }
+  .bs-checkbox{
+    text-align: center;
   }
 
 }
@@ -341,4 +350,16 @@ only screen and (min-device-pixel-ratio : 1.5) {
 #data_table_mar{
   margin-bottom: 10px;
   margin-top: 2px;
+}
+.eol-center-clientview {
+  min-width: 1100px;
+  text-align: left;
+  width: 950px;
+  margin: 0px auto;
+}
+.eol-center1{
+  min-width: 960px;
+  text-align: left;
+  width: 950px;
+  margin: 0px auto;
 }
