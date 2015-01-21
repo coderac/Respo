@@ -20,7 +20,7 @@
   </div>
 
 <div>
-  <form name="regUser" ng-submit="createEnterDocJSON(regUserList)">
+  <form name="regUser" ng-submit="submitMyForm()" data-ng-app data-ng-controller="postProjectCtrl">
 
 
     <table class="table-responsive table_left" id="table_gap" >
@@ -35,7 +35,7 @@
           <tr><td class="tablerow_fontgap">Category</td></tr>
           <tr><td class="tablerow_fontgap">
 
-            <div data-ng-app data-ng-controller="postProjectCtrl">
+            <div>
               <select data-ng-model="option1" data-ng-options="option for option in options1" data-ng-change="getOptions2()">
               </select>
               <select data-ng-model="option2" data-ng-options="option for option in options2" data-ng-show='options2.length'>
@@ -47,12 +47,12 @@
             <td class="tablerow_fontgap">Specific Skill required</td>
           </tr>
           <tr>
-            <td><input ng-model="fName" type="text"/></td>
+            <td><input ng-model="requiredSkills" type="text"/></td>
           </tr>
 
         </table>
-    <div class="btn-group" style="float: right; margin-right: 846px; margin-top: 21px;">
-      <button type="button" class="btn btn-info" aria-expanded="false" style="font-size: 16px; padding: 2px 24px; ">Submit
+    <div class="btn-group" style="float: right; margin-right: 846px; text-align:left; margin-top: 21px;">
+      <button type="submit" value="submit" class="btn btn-info" aria-expanded="false" style="font-size: 16px; padding: 2px 24px;">Submit
       </button>
     </div>
 
