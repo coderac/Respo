@@ -47,16 +47,30 @@ ctrls.controller('postProjectCtrl', function($scope, $http) {
     $scope.options2 = myNewOptions;
   };
   /***********************************************capture data to JSON************************************/
+/*
   console.log('started');
 
   $scope.url =   [{"projectName":"xyz", "email":"email","option1":"something", "option2":"something", "skillsAsked":"skills"}];
 
   $scope.submitMyForm = function() {
     $scope.msg = 'Data sent: '+ JSON.stringify($scope.languages);
+    console.log('i am around end');
   };
-  console.log('i am around end');
+*/
+
+
+/***************************************************************************************************************/
+  /*function postProjectCtrl($scope, $http) {*/
+    $scope.url='json/tester.json';
+    $scope.update = angular.copy.project;
+    $http.post($scope.url).success(function(tester) {
+      $scope.update = tester;
+      console.log('inside post json function ');
+    });
+    /*$scope.person = 'Data sent: '+ JSON.stringify($scope.url);*/
+  /*}*/
+
+
+
 });
-
-
-
 
