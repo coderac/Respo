@@ -19,8 +19,8 @@
     <label>Post your project details below</label>
   </div>
 
-<div>
-  <form name="regUser" ng-submit="submitMyForm()" data-ng-app data-ng-controller="postProjectCtrl">
+<div data-ng-app data-ng-controller="postProjectCtrl">
+  <form name="regUser"><!--novalidate ng-submit="loginform.$valid && login.submit()"-->
 
 
     <table class="table-responsive table_left" id="table_gap" >
@@ -28,7 +28,7 @@
             <td class="tablerow_fontgap">Project/Task Name</td>
           </tr>
           <tr>
-            <td class="tablerow_fontgap"><input ng-model="projectName" type="text" class="tabletext_gap"/></td>
+            <td class="tablerow_fontgap"><input ng-model="project.projectName" type="text" class="tabletext_gap"/></td>
           </tr>
           <tr><td class="tablerow_fontgap">Description</td></tr>
           <tr><td style="width: 10px;"><input type="text" ng-model="email" class="tabletext_gap" id="tabletext_height"/></td></tr>
@@ -52,11 +52,24 @@
 
         </table>
     <div class="btn-group" style="float: right; margin-right: 846px; text-align:left; margin-top: 21px;">
-      <button type="submit" value="submit" class="btn btn-info" aria-expanded="false" style="font-size: 16px; padding: 2px 24px;">Submit
+      <button type="button" class="btn btn-info" aria-expanded="false" style="font-size: 16px; padding: 2px 24px;" onclick="loginError()" id="todo">Submit..
       </button>
     </div>
 
-
+    <div id="">
+      {{project}}
+    </div>
+    <div class="row">
+      <div id="div1" class="col-md-8" style="{float:left;}">
+        Div 1 Text
+      </div>
+      <div id="div2" class="col-md-4" style="{float:right;}">
+        <img src="/images/che_demo.jpg" class="img-responsive"/>
+      </div>
+      <div id="div3" class="col-md-8" style="{float:left;}">
+        Div 2 Text
+      </div>
+    </div>
 
   </form>
 
